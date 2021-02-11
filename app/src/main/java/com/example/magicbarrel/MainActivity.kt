@@ -61,25 +61,6 @@ class MainActivity : AppCompatActivity() {
 
         })
 
-        barrel.setOnClickListener(View.OnClickListener {
-            choose_group.visibility = View.GONE
-            win.visibility = View.VISIBLE
-            Toast.makeText(this, "win", Toast.LENGTH_SHORT).show()
-
-        })
-
-        barrel2.setOnClickListener(View.OnClickListener {
-            choose_group.visibility = View.GONE
-            lose.visibility = View.VISIBLE
-
-        })
-
-        barrel3.setOnClickListener(View.OnClickListener {
-            choose_group.visibility = View.GONE
-            lose.visibility = View.VISIBLE
-
-        })
-
         win.setOnClickListener(View.OnClickListener {
 
             choose_group.visibility = View.VISIBLE
@@ -96,6 +77,22 @@ class MainActivity : AppCompatActivity() {
 
         })
 
+    }
+
+    fun click(v: View) {
+
+        if (Math.random() <= 0.40) {
+            choose_group.visibility = View.GONE
+            win.visibility = View.VISIBLE
+            Toast.makeText(this, "win", Toast.LENGTH_SHORT).show()
+
+        } else {
+
+            choose_group.visibility = View.GONE
+            lose.visibility = View.VISIBLE
+            Toast.makeText(this, "lose", Toast.LENGTH_SHORT).show()
+
+        }
     }
 
 }
