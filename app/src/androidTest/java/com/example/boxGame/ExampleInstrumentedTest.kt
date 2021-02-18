@@ -1,4 +1,4 @@
-package com.example.magicbarrel
+package com.example.boxGame
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,4 +1,4 @@
-package com.example.magicbarrel
+package com.example.boxGame
 
 import org.junit.Test
 

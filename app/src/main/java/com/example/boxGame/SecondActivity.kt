@@ -1,4 +1,4 @@
-package com.example.magicbarrel
+package com.example.boxGame
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
